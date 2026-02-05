@@ -1,0 +1,313 @@
+:root {
+  color-scheme: light;
+}
+
+.app {
+  min-height: 100vh;
+  background: #0c1014;
+  color: #f5f7fb;
+  padding: 32px 24px 64px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  color: #9fb7ff;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin: 0 0 12px;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: #cfd7e6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #3456f3;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(52, 86, 243, 0.35);
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid #3d4b66;
+}
+
+button.linkish {
+  background: transparent;
+  border: none;
+  color: #8bb5ff;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.hero-card {
+  background: #151b23;
+  border: 1px solid #263040;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 8px;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.tabs button {
+  background: #1d2531;
+  border: 1px solid transparent;
+}
+
+.tabs button.active {
+  border: 1px solid #5f78ff;
+  box-shadow: 0 8px 20px rgba(95, 120, 255, 0.35);
+}
+
+.lesson-section {
+  background: #10151c;
+  border: 1px solid #1f2835;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.lesson-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.depth-toggle {
+  display: flex;
+  gap: 8px;
+  background: #121a24;
+  padding: 6px;
+  border-radius: 999px;
+}
+
+.depth-toggle button {
+  background: transparent;
+  border: none;
+  padding: 8px 14px;
+  color: #cfd7e6;
+}
+
+.depth-toggle button.active {
+  background: #3456f3;
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.lesson-card {
+  background: #151b23;
+  border: 1px solid #263040;
+  padding: 16px;
+  border-radius: 16px;
+  min-height: 180px;
+}
+
+.lesson-card h3 {
+  margin-top: 0;
+}
+
+.lesson-card .deep {
+  color: #9fb7ff;
+  margin-top: 8px;
+}
+
+.play-section {
+  background: #10151c;
+  border: 1px solid #1f2835;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.play-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.play-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.play-controls select {
+  background: #1d2531;
+  color: #f5f7fb;
+  border: 1px solid #2a3342;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.play-canvas {
+  margin-top: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #203047;
+}
+
+.field {
+  fill: #0f2a1f;
+}
+
+.los {
+  stroke: #ffd43b;
+  stroke-width: 0.8;
+  opacity: 0.8;
+}
+
+.yard-line {
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 0.4;
+}
+
+.route {
+  stroke-width: 0.9;
+}
+
+.route.dashed {
+  stroke-dasharray: 2 2;
+}
+
+.player-label {
+  fill: #e9edf7;
+  font-size: 2.6px;
+}
+
+.positions,
+.glossary {
+  background: #10151c;
+  border: 1px solid #1f2835;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.positions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.pill-row {
+  display: flex;
+  gap: 8px;
+}
+
+.pill-row button {
+  background: #1d2531;
+}
+
+.pill-row button.active {
+  background: #3456f3;
+}
+
+.position-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.position-card {
+  background: #151b23;
+  border: 1px solid #263040;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.glossary article {
+  background: #151b23;
+  border: 1px solid #263040;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.glossary button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 32px;
+  color: #9da8ba;
+}
+
+.muted {
+  color: #9da8ba;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 24px 16px 48px;
+  }
+}
